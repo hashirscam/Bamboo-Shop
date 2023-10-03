@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.eco__product-img {
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    max-width: 270px;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.eco__product-img img{
+    width: 35vh;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.eco__product {
+    display: flex;
+    flex-direction: column;
+}
+
+.eco__product-price {
+    margin-bottom: 1rem;
+}
+
+.eco__product-content {
+    font-size: small;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    line-height: 1.7;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.eco__product-content h1 {
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.eco__product-button {
+        display: inline-block;
+        background-color: var(--color-tertiary);
+        color: #fff;
+        border-radius: 100px;
+        border: 1px solid var(--color-tertiary);
+        height: auto;
+        width: 80%;
+        padding: 18px 30px;
+        line-height: 1.25em;
+        vertical-align: top;
+        font-weight: 400;
+        transition: opacity .3s,color .3s,background-color .3s,border-color .3s;
+        cursor: pointer;
+}
+
+.eco__product-button:hover {
+    background-color: #fff;
+    border-color: var(--color-tertiary);
+    color: var(--color-tertiary);
+    opacity: 0.8;
+}
+
+.eco__product-reviews {
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    .eco__product {
+        flex-direction: column;
+    }
+
+    .eco__product-content {
+        padding: 0 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .eco__product-img {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .eco__product-content {
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+    .eco__product-img {
+        margin-bottom: 1rem;
+    }
+
+    .eco__product-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .eco__product-content p {
+        font-size: 0.8rem;
+    }
+
+    .eco__product-button {
+        font-size: 0.7rem;
+        padding: 0.5rem 1rem;
+    }
+}

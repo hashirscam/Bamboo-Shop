@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--color-primary);
+}
+
+a, div{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.button {
+        font-family: var(--font-primary);
+        display: inline-block;
+        background-color: var(--color-tertiary);
+        color: #fff;
+        /* border-radius: 100px; */
+        border: 1px solid var(--color-tertiary);
+        height: auto;
+        width: 80%;
+        padding: 18px 30px;
+        line-height: 1.25em;
+        vertical-align: top;
+        transition: opacity .3s,color .3s,background-color .3s,border-color .3s;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 14px;
+}
+
+.button:hover {
+    background-color: #fff;
+    border-color: var(--color-tertiary);
+    color: var(--color-tertiary);
+    opacity: 0.8;
+}
+
+.quantity-buttons {
+        width: fit-content;
+        display: flex;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        height: 35px;
+}
+
+.quantity-buttons span {
+        font-size: 18px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: #6b6b6b;
+}
+
+.quantity-buttons span:nth-child(1) {
+        border-right: 2px solid rgba(0, 0, 0, 0.2);
+}
+.quantity-buttons span:nth-child(2) {
+        width: 60px;
+}
+.quantity-buttons span:nth-child(3) {
+        border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.text {
+        font-family: var(--font-secondary);
+        font-size: 20px;
+}
+
+.section__padding {
+    padding: 2rem 3rem;
+}
+
+.section__margin {
+    margin: 4rem 6rem;
+}
+
+.sticky-nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+}
+
+.scale-up-tr {
+	-webkit-animation: scale-up-tr 0.1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-tr 0.1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+ @-webkit-keyframes scale-up-tr {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+  }
+  @keyframes scale-up-tr {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+  }
+  

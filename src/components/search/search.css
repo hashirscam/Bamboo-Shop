@@ -1,0 +1,161 @@
+.search-modal {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary);
+    transform: translateY(100%);
+    animation: slideSearchWindow 0.5s ease-in-out forwards;
+}
+
+.form-field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.form-field input{
+    font-family: var(--font-secondary);
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    flex: 20px;
+    font-weight: 600;
+    color: var(--color-quaternary);
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 48px;
+    height: 80px;
+}
+
+.form-field svg {
+    position: absolute;
+    cursor: pointer;
+    transform: translateY(25%);
+    right: 40px;
+    font-size: 50px;
+}
+
+.search-result-content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.search-result-item{
+    margin-left: 1rem;
+}
+
+.search-result-item:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.search-results {
+    height: calc(100vh - 160px);
+    overflow: auto;
+    margin: 20px 0;
+}
+
+.search-result-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.img-container {
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.prod-details {
+    overflow: hidden;
+}
+
+.name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 16px;
+    color: var(--color-tertiary);
+    line-height: 1;
+    margin-bottom: 10px;
+    font-weight: 600;
+    display: block;
+    font-family: var(--font-primary);
+}
+
+.desc {
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    line-height: 1;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slideSearchWindow {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-field input{
+        font-size: 24px;
+        height: 50px;
+    }
+    .form-field svg {
+        right: 20px;
+        font-size: 25px;
+        transform: translateY(50%);
+    }
+    .search-result-content{
+        max-width: calc(100%-20px);
+    }
+    .search-results {
+        height: calc(100vh - 110px);
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .form-field input{
+        font-size: 17px;
+        height: 50px;
+        padding-right: 1rem;
+    }
+    .form-field svg {
+        right: 20px;
+        font-size: 25px;
+        transform: translateY(50%);
+    }
+    .search-result-content{
+        max-width: calc(100%-20px);
+    }
+    .search-results {
+        height: calc(100vh - 110px);
+    }
+}
