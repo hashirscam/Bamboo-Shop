@@ -27,7 +27,7 @@ const Menu = () => (
       <li><p><Link to="about">Our Story</Link></p></li>
       <li><p><Link to="deforest">Deforestation</Link></p></li>
       <li><p><Link to="plastic">Anti-Plastic</Link></p></li>
-      <li><p><Link to="zero-waste">Vision & Mission</Link></p></li>
+      <li><p><Link to="zero-waste">Shaping Future</Link></p></li>
       
       {/* <li><p><Link to="#">The Eco-Journal</Link></p></li>
       <li><p><Link to="#">FAQ</Link></p></li> */}

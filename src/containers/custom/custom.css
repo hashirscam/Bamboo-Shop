@@ -1,4 +1,4 @@
-.eco__form{
+.eco__form {
     display: flex;
     flex-direction: column;
     max-width: 500px;
@@ -6,19 +6,18 @@
     overflow: hidden;
 }
 
-.full-width{
+.full-width {
     width: 100% !important;
 }
 
 .sigCanvas {
-border: 1px solid var(--color-tertiary);
-margin: 20px 0;
+    border: 1px solid var(--color-tertiary);
+    margin: 20px 0;
 }
 
-input[name = "name"],
-input[name = "email"],
-input[name = "phone"]
-{
+input[name="name"],
+input[name="email"],
+input[name="phone"] {
     color: var(--color-tertiary);
     margin-top: 20px;
     padding: 10px;
@@ -27,7 +26,7 @@ input[name = "phone"]
     border: 1px solid var(--color-tertiary);
 }
 
-input[name = "logo"]{
+input[name="logo"] {
     color: var(--color-tertiary);
     margin: 5px 0;
     padding: 10px;
@@ -36,22 +35,22 @@ input[name = "logo"]{
     border: 1px solid var(--color-tertiary);
 }
 
-.quantity{
+.quantity {
     color: var(--color-tertiary);
     font-family: var(--font-primary);
     border: 1px solid var(--color-tertiary);
     font-weight: bold;
     font-size: large;
-    width: 2.5rem;
+    width: 4rem;
     margin-left: auto;
 }
 
-.green{
+.green {
     margin-top: 2rem;
     color: var(--color-tertiary);
 }
 
-.agreement{
+.agreement {
     display: flex;
     flex-direction: row;
     font-family: var(--font-primary);
@@ -60,11 +59,11 @@ input[name = "logo"]{
     margin-bottom: 1rem;
 }
 
-.agreement input{
+.agreement input {
     margin-right: 10px;
 }
 
-.extra{
+.extra {
     color: var(--color-tertiary);
     margin-top: 20px;
     padding: 10px;
@@ -73,21 +72,20 @@ input[name = "logo"]{
     border: 1px solid var(--color-tertiary);
 }
 
-input[name = "name"]::placeholder,
-input[name = "email"]::placeholder,
-input[name = "phone"]::placeholder,
-input[name = "logo"]::placeholder,
+input[name="name"]::placeholder,
+input[name="email"]::placeholder,
+input[name="phone"]::placeholder,
+input[name="logo"]::placeholder,
 .extra::placeholder,
-.quantity::placeholder
-{
+.quantity::placeholder {
     color: var(--color-tertiary);
 }
 
-.signature{
+.signature {
     position: relative;
 }
 
-.signature svg{
+.signature svg {
     position: absolute;
     top: 25px;
     right: 5px;
@@ -96,13 +94,13 @@ input[name = "logo"]::placeholder,
     color: var(--color-tertiary);
 }
 
-.error{
+.error {
     color: red;
     font-family: var(--font-primary);
     font-weight: bold;
 }
 
-#end{
+#end {
     margin-bottom: 2rem;
 }
 
@@ -116,7 +114,7 @@ input[name = "logo"]::placeholder,
     font-family: var(--font-primary);
 }
 
-.custom_product{
+.custom_product {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
@@ -133,25 +131,25 @@ input[name = "logo"]::placeholder,
     font-weight: 600;
 }
 
-.custom_name{
+.custom_name {
     margin-left: 10px;
     color: var(--color-tertiary);
     font-family: var(--font-primary);
     letter-spacing: 0.5px;
 }
 
-.custom_heading{
+.custom_heading {
     justify-content: space-between;
 }
 
-input::-webkit-file-upload-button{
+input::-webkit-file-upload-button {
     border: none;
     color: var(--color-primary);
     padding: 0.5rem;
     font-family: var(--font-primary);
     background-color: var(--color-tertiary);
 }
-    
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -160,25 +158,25 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
     -moz-appearance: textfield;
 }
 
 @media only screen and (max-width: 600px) {
-    .eco__form{
+    .eco__form {
         margin: 1rem;
     }
-    .signature svg{
+    .signature svg {
         width: 1.5rem;
         height: 1.5rem;
     }
-    .custom_product{
+    .custom_product {
         margin-top: 0.5rem;
     }
-    .custom_name{
+    .custom_name {
         font-size: 14px;
     }
-    .sigCanvas{
+    .sigCanvas {
         border-left: none;
     }
 }

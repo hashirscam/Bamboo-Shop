@@ -19,21 +19,20 @@
     font-size: 2rem;
     letter-spacing: 2px;
     text-transform: capitalize;
+    text-align: center;
 }
 
-
-@media screen and (max-width: 600px){
-    .eco__products-heading{
+@media screen and (max-width: 600px) {
+    .eco__products-heading {
         font-size: 1.5rem;
-        text-align: center;
     }
-    .eco__desktop{
+    .eco__desktop {
         display: none;
     }
 }
 
-@media screen and (min-width: 600px){
-    .eco__mobile{
+@media screen and (min-width: 600px) {
+    .eco__mobile {
         visibility: hidden;
     }
 }
